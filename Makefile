@@ -1,4 +1,4 @@
-.PHONY: all layout git bash
+.PHONY: all layout git bash vim
 
 all: git layout bash
 
@@ -14,3 +14,8 @@ bash: layout
 	@rm -f ~/.bash_profile ~/.inputrc
 	@ln -s $(abspath bash/bash_profile) ~/.bash_profile
 	@ln -s $(abspath bash/inputrc) ~/.inputrc
+
+vim:
+	@rm -f ~/.vim
+	@ln -s $(abspath vim) ~/.vim
+
