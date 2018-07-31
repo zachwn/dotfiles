@@ -5,6 +5,7 @@
 #	2. Prompt
 #	3. Env
 #	4. Func
+#	5. Options
 #
 
 #
@@ -52,13 +53,36 @@ function gogo() {
 	cd "${path[0]}" || return 1
 }
 
-function dmake() {
-    is_running="$(docker ps | grep cdocker)"
-    if [[ ! $is_running ]] ; then
-        docker stop cdocker
-        docker rm cdocker
-        docker run -d  -t --name cdocker -v "$(pwd)":/src zachneal/cdocker
-    fi
-    docker exec -t -u "$(id -u)" cdocker make
+function lncode() {
+	local base="$(basename $PWD)"
+	local name="${HOME}/Code/${base}"
+	if [ -f "${name}"]; then
+		echo "file already exists"
+		return 1
+	fi
+	ln -s "${PWD}" "${name}" || return 1
 }
 
+# Create a new directory and enter it
+mkd() {
+	mkdir -p "$@"
+	cd "$@" || exit
+}
+
+# Make a temporary directory and enter it
+tmpd() {
+	local dir
+	if [ $# -eq 0 ]; then
+		dir=$(mktemp -d)
+	else
+		dir=$(mktemp -d -t "${1}.XXXXXXXXXX")
+	fi
+	cd "$dir" || exit
+}
+
+#
+#	5. Options
+#
+shopt -s checkwinsize
+# fix typos with cd
+shopt -s cdspell
