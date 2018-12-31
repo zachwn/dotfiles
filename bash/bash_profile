@@ -86,3 +86,5 @@ tmpd() {
 shopt -s checkwinsize
 # fix typos with cd
 shopt -s cdspell
+
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -1,13 +1,13 @@
 .PHONY: all layout git bash vim
 
-all: git layout bash
+all: git layout bash vim
 
 git:
 	@git config --global user.name "Zachary Nack"
 	@git config --global user.email "zachary.nack@icloud.com"
 
 layout:
-	@mkdir -p ~/.config ~/.local/bin
+	@mkdir -p ~/.local/bin
 	@mkdir -p ~/Code/go/{src,pkg,bin}
 
 bash: layout
