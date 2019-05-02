@@ -16,6 +16,7 @@ alias ll="ls -lhA"
 alias ..="cd .."
 alias ....="cd ../.."
 alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=${HOME}/.local/cache/chrome"
+alias mpv="open -a mpv"
 
 #
 #	2. Prompt
