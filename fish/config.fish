@@ -1,2 +1,3 @@
-set PATH /usr/local/opt/coreutils/libexec/gnubin /usr/local/bin $PATH
+
+alias ls="gls --color"
 
