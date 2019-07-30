@@ -11,8 +11,9 @@
 #
 #	1. Aliases
 #
-alias la="ls -A"
-alias ll="ls -lhA"
+alias ls="gls"
+alias la="gls -A"
+alias ll="gls -lhA"
 alias ..="cd .."
 alias ....="cd ../.."
 alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=${HOME}/.local/cache/chrome"
@@ -65,13 +66,13 @@ function lncode() {
 }
 
 # Create a new directory and enter it
-mkd() {
+function mkd() {
 	mkdir -p "$@"
 	cd "$@" || exit
 }
 
 # Make a temporary directory and enter it
-tmpd() {
+function tmpd() {
 	local dir
 	if [ $# -eq 0 ]; then
 		dir=$(mktemp -d)
@@ -88,4 +89,3 @@ shopt -s checkwinsize
 # fix typos with cd
 shopt -s cdspell
 
-export PATH="$HOME/.cargo/bin:$PATH"
