@@ -60,11 +60,7 @@ function gogo() {
 function lncode() {
 	local base="$(basename $PWD)"
 	local name="${HOME}/Code/${base}"
-	if [ -f "${name}"]; then
-		echo "file already exists"
-		return 1
-	fi
-	ln -s "${PWD}" "${name}" || return 1
+	ln -s "${PWD}" "${name}"
 }
 
 # Create a new directory and enter it
