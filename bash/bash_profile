@@ -11,13 +11,15 @@
 #
 #	1. Aliases
 #
-alias ls="gls"
-alias la="gls -A"
-alias ll="gls -lhA"
+alias ls="ls"
+alias la="ls -A"
+alias ll="ls -lhA"
 alias ..="cd .."
 alias ....="cd ../.."
 alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=${HOME}/.local/cache/chrome"
+alias py="python3"
 alias mpv="open -a mpv"
+alias ytmp3="youtube-dl --extract-audio --audio-format mp3 "
 
 #
 #	2. Prompt
