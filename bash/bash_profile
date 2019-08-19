@@ -32,7 +32,7 @@ PS1="\u@\h ${GREEN}\w${RESET}>"
 #	3. Env
 #
 export GOPATH="$HOME/Code/go"
-export PATH="$HOME/.local/bin:$GOPATH/bin:$PATH"
+export PATH="/opt/pkg/bin:$HOME/.local/bin:$GOPATH/bin:$PATH"
 export HISTCONTROL=ignoreboth
 
 #
