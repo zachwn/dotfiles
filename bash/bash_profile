@@ -18,7 +18,6 @@ alias ..="cd .."
 alias ....="cd ../.."
 alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=${HOME}/.local/cache/chrome"
 alias py="python3"
-alias mpv="open -a mpv"
 alias ytmp3="youtube-dl --extract-audio --audio-format mp3 "
 
 #
@@ -87,3 +86,5 @@ shopt -s checkwinsize
 # fix typos with cd
 shopt -s cdspell
 
+
+export PATH="$HOME/.cargo/bin:$PATH"

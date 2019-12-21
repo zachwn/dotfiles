@@ -3,7 +3,7 @@
 all: git layout bash vim
 
 git:
-	@git config --global user.name "Zachary Nack"
+	@git config --global user.name "Zachary N"
 	@git config --global user.email "zachary.nack@icloud.com"
 
 layout:
