@@ -1,3 +1,0 @@
-
-alias ls="gls --color"
-

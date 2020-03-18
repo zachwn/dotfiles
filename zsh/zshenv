@@ -1,5 +1,0 @@
-export GOPATH="$HOME/Code/go"
-typeset -U path
-path=(~/.local/bin $GOPATH/bin $path[@])
-path+=~/.cargo/bin
-export HISTCONTROL=ignoreboth
