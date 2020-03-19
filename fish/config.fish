@@ -5,6 +5,6 @@ export GOPATH="$HOME/Code/go"
 
 
 #	ALIASES
-alis la="ls -a"
-alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=${HOME}/.local/cache/chrome"
+alias la="ls -a"
+alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=$HOME/.local/cache/chrome"
 alias py="python3"
