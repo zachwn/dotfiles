@@ -1,6 +1,6 @@
-.PHONY: all layout fish
+.PHONY: all layout fish vim
 
-all: layout fish
+all: layout fish vim
 
 
 layout:
@@ -9,3 +9,6 @@ layout:
 
 fish:
 	ln -sf "$(shell readlink -f ./fish)" ~/.config/fish
+
+vim:
+	ln -sf "$(shell readlink -f ./vim)" ~/.vim
