@@ -11,3 +11,4 @@ fish:
 	ln -sf "$(realpath ./fish)" "$(HOME)/.config/"
 
 vim:
+    ln -sf "$(realpath ./vim)" "$(HOME)/.vim"
