@@ -20,6 +20,6 @@ set hlsearch        " highlight matches
 
 " Backups
 set backup
-set backupdir=~/.vim/tmp
+set backupdir=~/.vim/backup
 set writebackup
 set noswapfile
