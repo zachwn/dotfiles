@@ -8,6 +8,6 @@ layout:
 	mkdir -p ~/Code/go/src ~/Code/go/pkg ~/Code/go/bin
 
 fish:
-	ln -sf "$(realpath ./fish)" "$(HOME)/.config/"
+	ln -s "$(realpath ./fish)" "$(HOME)/.config/"
 
 vim:
