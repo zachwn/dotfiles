@@ -361,6 +361,8 @@ local on_attach = function(_, bufnr)
   end, { desc = 'Format current buffer with LSP' })
 end
 
+vim.keymap.set('n', '<leader>f', vim.lsp.buf.format, { desc = 'format using lsp' })
+
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
 --

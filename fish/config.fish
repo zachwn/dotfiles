@@ -1,11 +1,12 @@
 if status is-interactive
 # Commands to run in interactive sessions can go here
 
-	# clean chrome instantance with no plugins and clean cache
-	alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=$HOME/.local/cache/chrome"
+    # clean chrome instantances with no plugins
+    alias altchrome="open -n -a 'Google Chrome' --args --user-data-dir=$HOME/.local/cache/chrome"
+    alias cleanchrome="open -n -a 'Google Chrome' --args --user-data-dir=$HOME/.local/cache/chrome2"
+    alias cdcode="cd $HOME/Code"
 
-	alias cleanchrome="open -n -a 'Google Chrome' --args --user-data-dir=$HOME/.local/cache/chrome2"
-	# last history
+    # last history
     function last_history_item
         echo $history[1]
     end
