@@ -1,0 +1,30 @@
+{
+    "description": "CapsLock -> Esc, FN + CapsLock -> CapsLock, CapsLock + AnyKey -> Ctrl + AnyKey",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": ["caps_lock"]
+                }
+            },
+            "to": [{ "key_code": "caps_lock" }],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [{ "key_code": "escape" }],
+            "type": "basic"
+        }
+    ]
+}
