@@ -5,6 +5,11 @@ vim.keymap.set({'n', 'v'}, '<leader>y', '"+y')
 vim.keymap.set({'n', 'v'}, '<leader>d', '"+d')
 vim.keymap.set({'n', 'v'}, '<leader>p', '"+p')
 
+
+require 'after.highlight-on-yank'
+require ("config.lazy")
+
+
 -- line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -30,4 +35,3 @@ vim.opt.smartcase = true
 
 
 
-require 'after.highlight-on-yank'
