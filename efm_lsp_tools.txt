@@ -1,0 +1,10 @@
+# installed
+prettierd
+pyrefly
+ruff
+eslint_d
+stylua
+clang-format
+gopls
+lua-language-server
+rust-analyzer
