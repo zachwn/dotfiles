@@ -8,6 +8,8 @@ vim.keymap.set({ "n", "v" }, "<leader>f", function()
 	vim.lsp.buf.format({ name = "efm" })
 end)
 
+vim.keymap.set("n", "gs", "<nop>") -- unbind sleep command for remapping to surround
+
 vim.pack.add({
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/nvim-mini/mini.nvim", version = "stable" },
@@ -18,7 +20,19 @@ vim.pack.add({
 })
 
 -- require("mini.clue").setup()
-require("mini.surround").setup()
+require("mini.surround").setup({
+	mappings = {
+		add = "gsa",
+		delete = "gsd",
+		find = "gsf",
+		find_left = "gsF",
+		highlight = "gsh",
+		replace = "gsr",
+		suffix_last = "l",
+		suffix_next = "n",
+	},
+})
+
 require("mini.statusline").setup()
 require("mini.pick").setup()
 require("mini.git").setup()

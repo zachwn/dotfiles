@@ -44,4 +44,4 @@ See set_color --help for more on available colors.'
                       (J'$m'JJ'$o'| \UUU)
                        (UU)'(set_color normal)
 end
-fish_logo cyan magenta
+

@@ -1,5 +1,5 @@
 {
-    "description": "CapsLock -> Esc, FN + CapsLock -> CapsLock, CapsLock + AnyKey -> Ctrl + AnyKey",
+    "description": "Tap CapsLock -> Esc, Hold FN + CapsLock -> CapsLock, Hold CapsLock + AnyKey -> Ctrl + AnyKey",
     "manipulators": [
         {
             "from": {

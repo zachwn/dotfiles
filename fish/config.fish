@@ -9,5 +9,5 @@ if status is-interactive
 		echo $history[1]
 	end
 	abbr -a !! --position anywhere --function last_history_item
-
+	fish_logo cyan magenta
 end

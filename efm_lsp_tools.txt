@@ -8,3 +8,5 @@ clang-format
 gopls
 lua-language-server
 rust-analyzer
+vtsls
+
